@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCR Results</title>
+</head>
+<body>
+    {% extends "base.html" %}
+
+{% block content %}
+<h2>Extracted Text</h2>
+<textarea class="form-control" readonly>{{ text }}</textarea>
+<form method="post" action="{{ url_for('copy_text') }}">
+    <input type="hidden" name="text" value="{{ text }}">
+    <button type="submit" class="btn btn-secondary">Copy to Clipboard</button>
+</form>
+{% endblock %}
+</body>
+</html>

@@ -1,0 +1,77 @@
+/* General body styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    padding-top: 70px; /* Space for the heading box */
+    padding-bottom: 50px;
+}
+
+/* Container for centering the content */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Heading box styling */
+.heading-box {
+    background-color: #007bff; /* Blue background color */
+    color: #fff; /* White text color */
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 20px; /* Space below the heading box */
+}
+
+/* Form styling */
+.upload-form {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.upload-form .form-group {
+    margin-bottom: 15px;
+}
+
+.upload-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.upload-form input[type="file"],
+.upload-form input[type="range"] {
+    width: 100%;
+}
+
+.upload-form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.upload-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .upload-form {
+        padding: 15px;
+    }
+    
+    .upload-form button {
+        width: 100%;
+        font-size: 14px;
+    }
+}
